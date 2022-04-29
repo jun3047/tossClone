@@ -7,31 +7,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>토스</title>
+    <script>
+        window.addEventListener("scroll", function(){
+        if(window.pageYOffset == 0){
+        document.querySelector('nav').style.boxShadow = null;
+        console.debug('top');
+        }else{
+            document.querySelector('nav').style.boxShadow = '0 2px 4px 0 rgba(0,0,0,.2)';
+            console.debug('shadow');
+        }
+        })
+    </script>
 </head>
 
 <body>
     <nav class="topMeun">
-        <a href="index.html"><img src="logo.png" alt="토스"></a>
+        <div id="logo">
+            <a href="index.html"><img src="logo.png" alt="토스"></a>
+        </div>
         <div>
             <ul>
-                <li>회사소개</li>
-                <li>고객센터</li>
-                <li>자주 묻는 질문</li>
-                <li>토스 공인인증서</li>
-                <li>채용</li>
-                <li>한영</li>
-                <li>
-                    <button>kor</button>
-                    <button>eng</button>
+                <li><a href="">회사소개</a></li>
+                <li><a href="">고객센터</a></li>
+                <li><a href="">자주 묻는 질문</a></li>
+                <li><a href="">토스인증서</a></li>
+                <li><a href="">채용</a></li>
+                <li id="lang">
+                    <button class="kor">KOR</button>
+                    <button class="eng">ENG</button>
                 </li>
             </ul>
         </div>
     </nav>
     <main>
-
+        <div id="first">
+            <h1>금융의 모든 것 <br> 토스에서 쉽고 간편하게</h1>
+            <button>App Store</button>
+            <button>Google Play</button>
+        </div>
+        <div id="second">
+            <p><b>내 모든 금융 내역을 한눈에 조회하고 한 곳에서 관리하세요. <br>
+                    이제껏 경험 못 했던 쉽고 편리한 금융 서비스, <br>
+                    토스와 함께라면 당신의 일상이 새로워질 거예요.</b></p>
+        </div>
+        <div id="third">
+            <div class="right">
+                <div class="h">
+                    <h1>홈 · 소비</h1>
+                    <h2>
+                        내 돈 관리,<br>
+                        지출부터 일정까지<br>
+                        똑똑하게
+                    </h2>
+                </div>
+                <div class="img">
+                    <img src="https://static.toss.im/assets/homepage/newtossim/section1_1_home_02.png" 
+                    alt class="in">
+                    <img src="https://static.toss.im/screens/iPhone12_Clay_Shadow.png" 
+                    alt class="out">
+                </div>
+            </div>
+            <div class="left">
+                <div class="img">
+                    <img src="https://static.toss.im/assets/homepage/newtossim/section1_1_home_01.png" 
+                    alt class="in">
+                    <img src="https://static.toss.im/screens/iPhone12_Clay_Shadow.png" 
+                    alt class="out">
+                </div>
+                <div class="p">
+                    <p>토스에 계좌와 카드를 연결해 보세요.<br>
+                        계좌 잔액, 대출·투자 내역은 기본,<br>
+                        일자별 소비와 수입까지 한 번에 볼 수 있어요.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="fourth">
+            <h2></h2>
+        </div>
     </main>
     <footer>
-
     </footer>
 
 </body>

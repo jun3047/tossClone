@@ -1,5 +1,6 @@
 body {
     margin: 0%;
+    display: block;
 }
 
 ul {
@@ -11,10 +12,132 @@ ul {
   }
 
 nav {
+    background-color: white;
     display: flex;
-    flex-direction: row;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  }
+
+li a {
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 12px;
+    padding-top: 26px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+#lang {
+    padding: 25px 120px 25px 60px;
+    display: inline-block;
 }
 
-li {
-    padding: 15px;
+li button {
+    color: black;
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+  }
+
+.topMeun img {
+    max-width: 100%;
+    height: 45px;
+}
+
+nav #logo {
+    width: auto;
+    padding: 11px 320px 11px 110px;
+}
+
+main {
+    padding-top: 75px;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 58px;
+    line-height: 91px;
+    font-size: 66px;
+}
+
+p {
+    font-size:32px;
+    line-height: 50px;
+}
+
+#first {
+    height: 500px;
+    background-image: url('assets/toss-im-web-intro-still-start.jpeg'),linear-gradient(to bottom, white 100%, white 0%);
+    background-size: cover;
+}
+
+#first button {
+    height: 60px;
+    width: 150px;
+    border-radius: 10%;
+    border: none;
+    background-color: #4e5968;
+    color: white;
+}
+
+#second {
+    padding: 100px 0 190px 0;
+    margin: 0;
+    background-color: rgba(179, 179, 179, 0.089);
+}
+
+#third {
+    margin-bottom: 300px;
+    background-color: white;
+    padding: 0 100px 0 100px;
+    height: 900px;
+    border: black;
+    margin: 170px 10px 0 10px;
+}
+
+#third h1 {
+    font-size: 24px;
+    color: #3182f6;
+    text-align: left;
+    margin: 0;
+}
+
+#third h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #191f28;
+    text-align: left;
+    margin: 0;
+}
+
+#third p {
+    position: relative;
+    left: 300px;
+    top: 320px;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: rgb(51, 61, 75);
+}
+
+#third img {
+    width: 50%;
+    height: 50%;
+}
+
+#third img .in{
+    width: 34.2px;
+    height: 74.9px;
+}
+
+#third img .out{
+    width: 600px;
+    height: 936px;
 }
